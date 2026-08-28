@@ -1,8 +1,15 @@
 ## CRUD PHP + MySQL
-***
-A ideia geral do projeto é simular um pequeno sistema de folha de RH (Recursos Humanos)<br>
-Será utilizado a linguagem de programação PHP e o banco de dados relacional MySQL e irá seguir uma arquitetura MVC<br>
-Observação: Não teremos um front - end e o "front - end" será o próprio terminal que no meu caso é o do vscode<br>
-***
-A clonagem do repositório é livre tanto para refatoração, alterações, estudos etc...
-Desenvolvedor Responsável: Pablo Duarte de Quadros
+
+---
+
+A ideia geral do projeto é simular um pequeno sistema de folha de pagamento de RH (Recursos Humanos).
+
+Será utilizada a linguagem de programação PHP e o banco de dados relacional MySQL, seguindo uma arquitetura MVC.
+
+**Observação:** Não teremos um Front-End, e o próprio terminal, que no meu caso é o terminal integrado do VS Code, será utilizado como interface.
+
+---
+
+A clonagem do repositório é livre, tanto para refatoração, alterações, estudos etc.
+
+**Desenvolvedor responsável:** Pablo Duarte de Quadros
