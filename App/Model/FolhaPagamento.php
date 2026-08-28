@@ -1,4 +1,6 @@
 <?php
+namespace App\Model;
+use DateTimeInterface;
 class FolhaPagamento
 {
     private ?int $id = null;
