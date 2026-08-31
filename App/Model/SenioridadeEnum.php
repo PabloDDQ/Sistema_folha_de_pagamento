@@ -23,4 +23,31 @@ enum SenioridadeEnum: string
             self::Diretor => 22000,
         };
     }
+
+    public function id(): int
+    {
+        return match ($this) {
+            self::Estagiario => 1,
+            self::Junior => 2,
+            self::Pleno => 3,
+            self::Senior => 4,
+            self::Especialista => 5,
+            self::Gerente => 6,
+            self::Diretor => 7,
+        };
+    }
+
+    public static function fromId(int $id): self
+    {
+        return match ($id) {
+            1 => self::Estagiario,
+            2 => self::Junior,
+            3 => self::Pleno,
+            4 => self::Senior,
+            5 => self::Especialista,
+            6 => self::Gerente,
+            7 => self::Diretor,
+            default => throw new \InvalidArgumentException('Senioridade inválida.'),
+        };
+    }
 }

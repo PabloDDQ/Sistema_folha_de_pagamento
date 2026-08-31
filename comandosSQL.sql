@@ -23,6 +23,16 @@ CREATE TABLE tbl_colaboradores (
     CONSTRAINT FK_senioridade FOREIGN KEY (senioridade_ID) REFERENCES tbl_senioridade (ID_senioridade)
 );
 
+INSERT INTO tbl_senioridade (ID_senioridade, senerioridade, salario_base) VALUES
+(1, 'estagiario', 1500),
+(2, 'junior', 3500),
+(3, 'pleno', 6000),
+(4, 'senior', 10000),
+(5, 'especialista', 13000),
+(6, 'gerente', 15000),
+(7, 'diretor', 22000)
+ON DUPLICATE KEY UPDATE senerioridade = VALUES(senerioridade), salario_base = VALUES(salario_base);
+
 CREATE TABLE tbl_folhaPagamento (
     ID_folhaPagamento INT AUTO_INCREMENT PRIMARY KEY,
     colaborador_ID INT NOT NULL,
